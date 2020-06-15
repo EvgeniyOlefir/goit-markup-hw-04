@@ -181,6 +181,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: gray;
 }
 
 .hero-title {
@@ -225,6 +226,17 @@ p {
 
 .features-item {
   width: 270px;
+}
+
+.features-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-color: #f5f4fa;
+  background-image: url(../images/antenna.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Block */
@@ -442,23 +454,40 @@ p {
 /* Button */
 
 .button {
-  display: inline-block;
-  color: var(--primary-text-color);
-  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-color);
+  color: var(--white);
+  border-radius: 4px;
 
-  padding: 10px 32px;
-  min-width: 200px;
+  padding: 10px;
+  width: 200px;
+  height: 50px;
 
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
 }
 
-.button.primary {
-  background-color: var(--accent-color);
-  color: var(--white);
-  border-radius: 4px;
+.button:hover,
+.button:focus {
+  color: black;
 }
+
+.button.footer::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+
+  background-image: url(../images/icon_send.svg);
+  background-size: contain;
+}
+
+/* .hero-button {
+  display: inline-block;
+} */
 
 .button-portfolio {
   margin-right: 8px;
