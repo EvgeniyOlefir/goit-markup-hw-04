@@ -49,11 +49,11 @@ p {
 /* Logo */
 
 .logo {
-  display: inline-block;
+  display: block;
   color: var(--black);
   font-family: Raleway, sans-serif;
 
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -65,7 +65,7 @@ p {
   color: var(--accent-color);
 }
 
-.logo-web {
+.logo-accent {
   color: var(--accent-color);
   font-family: Raleway, sans-serif;
 
@@ -75,14 +75,13 @@ p {
   letter-spacing: 0.03em;
 }
 
-.logo-studio {
-  font-family: Raleway, sans-serif;
+.logo.inverse {
   color: var(--white);
+}
 
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+.logo.inverse:hover,
+.logo.inverse:focus {
+  color: var(--accent-color);
 }
 
 .list {
@@ -171,7 +170,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.8),
@@ -200,7 +199,8 @@ p {
 /* Section */
 
 .section {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .section.no-padding {
@@ -219,6 +219,15 @@ p {
   letter-spacing: 0.03em;
 }
 
+.visually-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .features-list {
   display: flex;
   justify-content: space-between;
@@ -234,7 +243,7 @@ p {
   height: 120px;
   background-color: #f5f4fa;
   background-image: url(../images/antenna.svg);
-  background-size: contain;
+  background-size: auto;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -416,8 +425,8 @@ p {
   display: flex;
 }
 
-.call {
-  font-weight: 700;
+.join {
+  display: block;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -441,6 +450,7 @@ p {
   align-items: center;
   padding-top: 18px;
   padding-bottom: 21px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .page-footer .social-link {
