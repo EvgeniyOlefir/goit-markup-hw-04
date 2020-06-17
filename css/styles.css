@@ -382,6 +382,7 @@ p {
 .team-card {
   padding-top: 30px;
   padding-bottom: 24px;
+  text-align: center;
 }
 
 .name {
@@ -407,8 +408,14 @@ p {
 }
 
 .social-link {
+  display: inline-block;
+
+  height: 20px;
+  width: 20px;
   margin-top: 0;
+  margin-right: 22px;
   margin-bottom: 24px;
+  background-repeat: no-repeat;
 }
 
 .social-link:hover,
@@ -491,6 +498,47 @@ p {
 
 .social-footer {
   display: flex;
+  justify-content: space-between;
+}
+
+.footer-links > .social-link {
+  display: inline-block;
+
+  height: 44px;
+  width: 44px;
+  margin-right: 10px;
+  margin-bottom: 0;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.social-link:nth-last-child(-n + 1) {
+  margin-right: 0;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.instagram-icon {
+  background-image: url(../images/instagram_logo_white.svg);
+}
+
+.twitter-icon {
+  background-image: url(../images/twitter_logo_white.svg);
+}
+
+.facebook-icon {
+  background-image: url(../images/facebook_logo_white.svg);
+}
+
+.linkedin-icon {
+  background-image: url(../images/linkedin_logo_white.svg);
 }
 
 .join {
