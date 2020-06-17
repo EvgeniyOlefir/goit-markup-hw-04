@@ -435,15 +435,16 @@ p {
   width: 170px;
   height: 90px;
   text-align: center;
+
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
 
 .client-logo {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   width: 170px;
   height: 90px;
-  padding-top: 20px;
 }
 
 .client-logo:hover,
