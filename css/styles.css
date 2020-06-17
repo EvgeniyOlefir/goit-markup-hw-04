@@ -96,6 +96,29 @@ p {
   list-style: none;
 }
 
+.link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.link::before {
+  content: '';
+  margin-right: 10px;
+  background-size: contain;
+}
+
+.icon-envelope::before {
+  width: 16px;
+  height: 12px;
+  background-image: url(../images/envelope.svg);
+}
+
+.icon-phone::before {
+  width: 10px;
+  height: 14px;
+  background-image: url(../images/phone.svg);
+}
+
 /* Site nav */
 
 .site-nav {
