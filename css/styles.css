@@ -381,7 +381,28 @@ p {
 .team-card {
   padding-top: 30px;
   padding-bottom: 24px;
+  padding-right: 25px;
+  padding-left: 25px;
   text-align: center;
+}
+
+.team-card .social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 44px;
+  width: 44px;
+  margin-right: 10px;
+  margin-bottom: 0;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.social-icon:hover {
+  color: var(--white);
 }
 
 .name {
@@ -552,18 +573,7 @@ p {
   fill: var(--white);
 }
 
-.team-social {
-  display: flex;
 
-  height: 44px;
-  width: 44px;
-  margin-right: 10px;
-  margin-bottom: 0;
-
-  background-color: var(--accent-color);
-  background-repeat: no-repeat;
-  border-radius: 50%;
-}
 
 .join {
   display: block;
