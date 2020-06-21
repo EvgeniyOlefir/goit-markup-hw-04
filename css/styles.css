@@ -101,7 +101,7 @@ p {
   align-items: center;
 }
 
-.link::before {
+/* .link::before {
   content: '';
   margin-right: 10px;
   background-size: contain;
@@ -111,7 +111,7 @@ p {
   width: 16px;
   height: 12px;
   background-image: url(../images/envelope.svg);
-}
+} */
 
 .icon-phone::before {
   width: 10px;
@@ -188,8 +188,31 @@ p {
   border-bottom: 1px solid #ececec;
 }
 
-.list {
-  list-style: none;
+/* тренировка */
+
+.action {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  outline: 1px solid black;
+}
+
+.contact {
+  color: var(--secondary-text-color);
+}
+
+.envelope-icon {
+  width: 17px;
+  height: 13px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.phone-icon {
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* Hero */
