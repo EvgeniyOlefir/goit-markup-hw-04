@@ -414,18 +414,31 @@ p {
   align-items: center;
   justify-content: center;
 
+  margin-right: 10px;
+  margin-bottom: 0;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+
+.social-icon {
   height: 44px;
   width: 44px;
   margin-right: 10px;
   margin-bottom: 0;
 
   background-color: transparent;
-  background-repeat: no-repeat;
-  border-radius: 50%;
+  --color2: transparent;
+  --color4: #afb1b8;
 }
 
 .social-icon:hover {
-  color: var(--white);
+  --color2: #2196f3;
+  --color4: #ffffff;
+}
+
+.social-icon:nth-last-child(n + 1) {
+  margin-right: 0;
 }
 
 .name {
@@ -452,18 +465,6 @@ p {
 
 .social-link {
   display: inline-block;
-
-  height: 20px;
-  width: 20px;
-  margin-top: 0;
-  margin-right: 22px;
-  margin-bottom: 24px;
-  background-repeat: no-repeat;
-}
-
-.social-link:hover,
-.social-link:focus {
-  color: var(--accent-color);
 }
 
 /* Clients */
@@ -564,11 +565,6 @@ p {
   margin-right: 0;
 }
 
-.social-link:hover,
-.social-link:focus {
-  background-color: var(--accent-color);
-}
-
 .instagram-icon {
   background-image: url(../images/instagram_logo_white.svg);
 }
@@ -585,12 +581,12 @@ p {
   background-image: url(../images/linkedin_logo_white.svg);
 }
 
-.social-icon {
+/* .social-icon {
   display: inline-block;
   width: 20px;
   height: 20px;
   fill: #afb1b8;
-}
+} */
 
 .social-icon:hover {
   fill: var(--white);
