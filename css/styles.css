@@ -404,9 +404,6 @@ p {
 .team-card {
   padding-top: 30px;
   padding-bottom: 24px;
-  padding-right: 25px;
-  padding-left: 25px;
-  text-align: center;
 }
 
 .team-card .social-link {
@@ -414,17 +411,12 @@ p {
   align-items: center;
   justify-content: center;
 
-  margin-right: 10px;
   margin-bottom: 0;
-
-  background-color: transparent;
-  background-repeat: no-repeat;
 }
 
 .social-icon {
   height: 44px;
   width: 44px;
-  margin-right: 10px;
   margin-bottom: 0;
 
   background-color: transparent;
@@ -439,6 +431,18 @@ p {
 
 .social-icon:nth-last-child(n + 1) {
   margin-right: 0;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+.social-list > .social-link {
+  display: inline-block;
+  margin-right: 10px;
 }
 
 .name {
@@ -461,10 +465,6 @@ p {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-}
-
-.social-link {
-  display: inline-block;
 }
 
 /* Clients */
@@ -491,9 +491,12 @@ p {
   height: 90px;
 }
 
-.client-logo:hover,
-.client-logo:focus {
-  color: var(--accent-color);
+.client-item:hover {
+  border-color: var(--accent-color);
+}
+
+.client-icon:hover {
+  --color3: #2196f3;
 }
 
 /* Footer */
@@ -546,50 +549,22 @@ p {
   justify-content: space-between;
 }
 
-.footer-links > .social-link {
-  display: inline-block;
+.social-icon.footer {
+  --color2: rgba(255, 255, 255, 0.1);
+  --color4: #ffffff;
+}
 
-  height: 44px;
-  width: 44px;
+.social-icon:hover {
+  --color2: #2196f3;
+  --color4: #ffffff;
+}
+
+.social-footer > .social-link {
   margin-right: 10px;
-  margin-bottom: 0;
-
-  background-color: rgba(255, 255, 255, 0.1);
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
 }
 
 .social-link:nth-last-child(-n + 1) {
   margin-right: 0;
-}
-
-.instagram-icon {
-  background-image: url(../images/instagram_logo_white.svg);
-}
-
-.twitter-icon {
-  background-image: url(../images/twitter_logo_white.svg);
-}
-
-.facebook-icon {
-  background-image: url(../images/facebook_logo_white.svg);
-}
-
-.linkedin-icon {
-  background-image: url(../images/linkedin_logo_white.svg);
-}
-
-/* .social-icon {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  fill: #afb1b8;
-} */
-
-.social-icon:hover {
-  fill: var(--white);
 }
 
 .join {
