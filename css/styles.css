@@ -290,7 +290,7 @@ p {
   width: 270px;
 }
 
-.features-item::before {
+/* .features-item::before {
   display: block;
   content: '';
   height: 120px;
@@ -299,10 +299,19 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 4px;
-}
+} */
 
-.icon-antena::before {
+/* .icon-antena::before {
   background-image: url(../images/antenna.svg);
+} */
+
+.features-item .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 70px;
+  height: 70px;
 }
 
 .icon-clock::before {
@@ -617,19 +626,10 @@ p {
   line-height: 1.87;
 }
 
-.button:hover,
-.button:focus {
-  color: black;
-}
-
-.button.footer::after {
-  content: '';
+.subscription .icon {
   width: 24px;
   height: 24px;
   margin-left: 10px;
-
-  background-image: url(../images/icon_send.svg);
-  background-size: contain;
 }
 
 .button-portfolio {
