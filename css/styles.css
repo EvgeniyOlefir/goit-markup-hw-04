@@ -290,40 +290,14 @@ p {
   width: 270px;
 }
 
-/* .features-item::before {
-  display: block;
-  content: '';
-  height: 120px;
-  background-color: #f5f4fa;
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 4px;
-} */
-
-/* .icon-antena::before {
-  background-image: url(../images/antenna.svg);
-} */
-
 .features-item .icon {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  width: 70px;
-  height: 70px;
-}
-
-.icon-clock::before {
-  background-image: url(../images/clock.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images/diagram.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/astronaut.svg);
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
 }
 
 /* Block */
